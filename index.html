@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <section id="sidebar" class="collapsed">
+            <div class="logo">
+                <span class="logo-icon">📅</span>
+                <span class="logo-text">Event Dashboard</span>
+            </div>
+        
+            <nav class="nav-links">
+                <a href="#" class="nav-item">
+                    <span class="icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📋</span>
+                    <span class="nav-text">Events</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">🎤</span>
+                    <span class="nav-text">Speakers</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📊</span>
+                    <span class="nav-text">Reports</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">🔔</span>
+                    <span class="nav-text">Notifications</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">💬</span>
+                    <span class="nav-text">Messages</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span>
+                    <span class="nav-text">Settings</span>
+                </a>
+                <a href="#" id="collapse-sidebar" class="nav-item">
+                    <span class="icon">⬅️</span>
+                    <span class="nav-text">Collapse</span>
+                </a>
+                <a href="#" id="dark-mode-toggle" class="nav-item">
+                    <span class="icon">🌙</span>
+                    <span class="nav-text">Dark Mode</span>
+                </a>
+                <div class="user-profile nav-item">
+                    <div class="icon avatar">👤</div>
+                    <div class="nav-text user-info">
+                        <p class="user-name">John Doe</p>
+                        <p class="user-email">johndoe@example.com</p>
+                    </div>
+                </div>
+            </nav>
+        
+            <!-- User Profile Section -->
+        </section>
+        
+
+
+        <!-- Main Content -->
+        <main>
+        <header>
+            <button id="dark-mode-toggle"></button>
+            <button id="sidebar-toggle">☰</button>
+        </header>
+
+        <section id="content">
+            <!-- Overview Cards -->
+            <div class="overview-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <div>Total Events: </div>
+                        <span class="icon">📅</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-value">100,000</div>
+                        <div class="card-trend">+5.0%</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>Total Events: </div>
+                        <span class="icon">📅</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-value">100,000</div>
+                        <div class="card-trend">+5.0%</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>Total Events: </div>
+                        <span class="icon">📅</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-value">100,000</div>
+                        <div class="card-trend">+5.0%</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>Total Events: </div>
+                        <span class="icon">📅</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-value">100,000</div>
+                        <div class="card-trend">+5.0%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart Container -->
+            <div id="chart-container">
+            <canvas id="event-chart"></canvas>
+            </div>
+
+            <!-- Carousel Slider -->
+            <div class="carousel">
+            <div class="carousel-item">Update 1: Event A added</div>
+            <div class="carousel-item">Update 2: Speaker B confirmed</div>
+            <div class="carousel-item">Update 3: New sponsorship</div>
+            </div>
+        </section>
+        </main>
+
+        <!-- Modal Pop-Up -->
+        <div id="event-modal" class="hidden">
+        <div class="modal-content">
+            <h2>Event Details</h2>
+            <p>Event Description here...</p>
+            <button id="close-modal">Close</button>
+        </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
